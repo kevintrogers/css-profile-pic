@@ -24,7 +24,7 @@ body {
     position: absolute;
     background: $hair-color;
     top: 10%;
-    left:1%;
+    left:0%;
     height:25%;
     width:10%;
     border-radius: 40% 0% 0 0;
@@ -33,7 +33,7 @@ body {
   position: absolute;
   background: #5d4037;
   top: 10%;
-  right: 1%;
+  right: 0%;
   height: 25%;
   width: 10%;
   border-radius: 0 40% 0 0;}
@@ -50,7 +50,7 @@ body {
   .ear-left{
     position: absolute;
     background: $skin-color;
-    top: 30%;
+    top: 35%;
     left: -6.5%;
     width: 7.5%;
     height:12.5%;
@@ -59,7 +59,7 @@ body {
   .ear-right{
         position: absolute;
     background: $skin-color;
-    top: 30%;
+    top: 35%;
     right: -6.5%;
     width: 7.5%;
     height:12.5%;
@@ -67,19 +67,22 @@ body {
   }
   .eye {
     position: absolute;
+    width: 5%;
+    height: 5%;
     height: 6.5%;
     width: 6.5%;
     background: $retina-color;
     border-radius: 50%;
     margin: auto;
     
+    
    }
    .eye-left {
-     top: 35%;
+     top: 40%;
      left: 33%;
    }
    .eye-right {
-    top: 35%;
+top: 40%;
      right: 33%;
      
    }
@@ -109,9 +112,63 @@ body {
      border-radius: 50%;
        
    }
+   .frame-left {
+       position:absolute;
+       background: $glasses-color;
+       top: 33%;
+       left:0.5%;
+       height: 2%;
+       width: 25%;
+   }
+      .frame-right {
+       position:absolute;
+       background: $glasses-color;
+       top: 33%;
+       right:0.5%;
+       height: 2%;
+       width: 25%;
+   }
+   .lens-left {
+       position: absolute;
+       background: transparent;
+       border: 10px solid $glasses-color;
+       height: 14.5%;
+       width: 17.5%;
+       top: 33%;
+       left:25.5%;
+       border-radius: 0 0 50% 50%;
+   }
+      .lens-right {
+       position: absolute;
+       background: transparent;
+       border: 10px solid $glasses-color;
+       height: 14.5%;
+       width: 17.5%;
+       top: 33%;
+       right:25.5%;
+       border-radius: 0 0 50% 50%;
+   }
+   .connector {
+       position:absolute;
+       background: $glasses-color;
+       top: 33%;
+       left:41.5%;
+       height: 2%;
+       width: 15%;
+       
+   }
+      .connector-bottom {
+       position:absolute;
+       background: $glasses-color;
+       top: 39%;
+       left:48.5%;
+       height: 2%;
+       width: 4%;
+       
+   }
    .nose {
        position: absolute;
-       top:40%;
+       top:42.5%;
        left: 43.75%;
        border-radius: 30%;
        height: 20%;
@@ -128,7 +185,7 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
        width: 25%;
        height: 2.5%;
        border-radius: 50% 50% 0 0;
-       top: 66%;
+       top: 71%;
        left: 37.5%;
    }
       .lower-lip {
@@ -137,6 +194,6 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
        width: 25%;
        height: 3.5%;
        border-radius: 0 0 50% 50%;
-       top: 69%;
+       top: 74%;
        left: 37.5%;
    }
