@@ -2,8 +2,11 @@ body {
   background: #fafafa; }
 
 .box {
+  position: relative;
   height: 600px;
-  width: 600px; }
+  width: 600px;
+  margin: auto;
+  display: block; }
 
 .head {
   position: absolute;
