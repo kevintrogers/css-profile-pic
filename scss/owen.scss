@@ -1,0 +1,207 @@
+$hair-color: #483352;
+$skin-color: #bf916f;
+$glasses-color: #202020;
+$retina-color: #fafafa;
+$iris-color: #201e19;
+$pupil-color: #000;
+$nose-color: #a47f6f;
+$lip-color: #8f6161;
+$teeth-color: #fff;
+
+body {
+    background: #fafafa;
+}
+.box {
+    position:relative;
+    height:600px;
+    width:600px;
+    margin:auto;
+    display:block;
+        
+}
+.head {
+  position: absolute;
+  top: 16.5%;
+  left: 25%;
+  width: 50%;
+  height: 67%;
+  background: $skin-color;
+  border-radius: 40%; }
+  
+  .hair-left {
+    position: absolute;
+    background: $hair-color;
+    top: 10%;
+    left:0%;
+    height:25%;
+    width:10%;
+    border-radius: 40% 0% 0 0;
+  }
+   .hair-right {
+  position: absolute;
+  background: $hair-color;
+  top: 10%;
+  right: 0%;
+  height: 25%;
+  width: 10%;
+  border-radius: 0 40% 0 0;}
+  
+  .hair-top {
+  position: absolute;
+  background: url('img/owen-hair.svg');
+    top: -5%;
+  left: 1%;
+  height: 20%;
+  width: 98%; 
+
+  }
+  .ear-left{
+    position: absolute;
+    background: $skin-color;
+    top: 35%;
+    left: -6.5%;
+    width: 7.5%;
+    height:12.5%;
+    border-radius: 50% 0  0 50%;
+  }
+  .ear-right{
+        position: absolute;
+    background: $skin-color;
+    top: 35%;
+    right: -6.5%;
+    width: 7.5%;
+    height:12.5%;
+    border-radius: 0 50%  50% 0;
+  }
+  .eye {
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    height: 6.5%;
+    width: 6.5%;
+    background: $retina-color;
+    border-radius: 50%;
+    margin: auto;
+    
+    
+   }
+   .eye-left {
+     top: 40%;
+     left: 33%;
+   }
+   .eye-right {
+top: 40%;
+     right: 33%;
+     
+   }
+   .brow {
+       position:absolute;
+       background: $hair-color;
+       width: 100%;
+       height: 20%;
+       top: -40%;
+   }
+   .iris {
+     position:relative;
+     top:25%;
+     margin: auto;
+     background: $iris-color;
+     width: 50%;
+     height: 50%;
+     border-radius: 50%;
+   }
+   .pupil {
+     position:relative;
+     top:25%;
+     margin: auto;
+     background: $pupil-color;
+     width: 50%;
+     height: 50%;
+     border-radius: 50%;
+       
+   }
+   .frame-left {
+       position:absolute;
+       background: $glasses-color;
+       top: 33%;
+       left:0.5%;
+       height: 2%;
+       width: 25%;
+   }
+      .frame-right {
+       position:absolute;
+       background: $glasses-color;
+       top: 33%;
+       right:0.5%;
+       height: 2%;
+       width: 25%;
+   }
+   .lens-left {
+       position: absolute;
+       background: transparent;
+       border: 10px solid $glasses-color;
+       height: 14.5%;
+       width: 17.5%;
+       top: 33%;
+       left:25.5%;
+       border-radius: 0 0 50% 50%;
+   }
+      .lens-right {
+       position: absolute;
+       background: transparent;
+       border: 10px solid $glasses-color;
+       height: 14.5%;
+       width: 17.5%;
+       top: 33%;
+       right:25.5%;
+       border-radius: 0 0 50% 50%;
+   }
+   .connector {
+       position:absolute;
+       background: $glasses-color;
+       top: 33%;
+       left:41.5%;
+       height: 2%;
+       width: 15%;
+       
+   }
+      .connector-bottom {
+       position:absolute;
+       background: $glasses-color;
+       top: 39%;
+       left:48.5%;
+       height: 2%;
+       width: 4%;
+       
+   }
+   .nose {
+       position: absolute;
+       top:42.5%;
+       left: 43.75%;
+       border-radius: 30%;
+       height: 20%;
+       width: 12.5%;
+       background: $nose-color;
+       -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background: $nose-color;
+
+   }
+   .upper-lip {
+       position: absolute;
+       background: $lip-color;
+       width: 25%;
+       height: 2.5%;
+       border-radius: 50% 50% 0 0;
+       top: 71%;
+       left: 37.5%;
+   }
+      .lower-lip {
+       position: absolute;
+       background: $lip-color;
+       width: 25%;
+       height: 3.5%;
+       border-radius: 0 0 50% 50%;
+       top: 74%;
+       left: 37.5%;
+   }
