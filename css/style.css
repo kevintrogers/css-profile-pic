@@ -1,3 +1,9 @@
+@keyframes lookDown {
+  from {
+    top: 25%; }
+  to {
+    top: 37.5%; } }
+
 body {
   background: #fafafa; }
 
@@ -16,6 +22,18 @@ body {
   height: 67%;
   background: #FFC8A4;
   border-radius: 40%; }
+
+.glasses, .teeth, .lower-lip, .upper-lip {
+  display: none; }
+
+.head:hover .iris {
+  animation: lookDown .3s forwards; }
+
+.head:hover .teeth {
+  display: none; }
+
+.head:hover .glasses, .head:hover .lower-lip, .head:hover .upper-lip {
+  display: block; }
 
 .hair-left {
   position: absolute;
@@ -38,9 +56,9 @@ body {
 .hair-top {
   position: absolute;
   background: #5d4037;
-  top: -5%;
+  top: 0;
   left: 10%;
-  height: 20%;
+  height: 15%;
   width: 80%;
   border-radius: 40% 40% 0 0; }
 
@@ -175,6 +193,16 @@ body {
   width: 25%;
   height: 2.5%;
   border-radius: 50% 50% 0 0;
+  top: 71%;
+  left: 37.5%; }
+
+.teeth {
+  position: absolute;
+  display: block;
+  background: #fff;
+  width: 25%;
+  height: 5%;
+  border-radius: 0 0 50% 50%;
   top: 71%;
   left: 37.5%; }
 
