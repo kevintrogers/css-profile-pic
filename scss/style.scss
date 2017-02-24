@@ -8,7 +8,8 @@ $nose-color: #eebb99;
 $lip-color: #CCA083;
 $teeth-color: #fff;
 $undershirt-color:#f5f5f5;
-$shirt-color: #0d47a1;
+$collar-color: #0d47a1;
+$shirt-color:#448aff;
 
 @keyframes lookDown {
     from {
@@ -263,26 +264,47 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 
    .collar {
        position:absolute;
-       background: $shirt-color;
+       background: $collar-color;
        z-index: 5;
        width: 30%;
        height:30%;
    }
  .collar-left {
-       top: 75%;
-       left: -5%;
+       top: 60%;
+       left: -10%;
     -webkit-clip-path: polygon(0 0, 75% 0%, 100% 100%, 25% 100%);
     clip-path: polygon(0 0, 75% 0%, 100% 100%, 25% 100%);
        
    }
    .collar-right {
-    top: 80%;
-    right: -5%;
+    top: 60%;
+    right: -10%;
     -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);  
   
    }
    .shirt-left{
+       position: absolute;
+       background: $shirt-color;
+       border-right: 2px solid black !important;
+       top: 90%;
+       right: -130%;
+       height: 60%;
+       width: 300%;
+       z-index:3;
+    -webkit-clip-path: polygon(0 0, 30% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 30% 0%, 100% 100%, 0% 100%);
+    
+       
    }
    .shirt-right {
+           position: absolute;
+       background: $shirt-color;
+       top: 90%;
+       left: -130;
+       height: 60%;
+       width: 300%;
+    -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100% );
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+    
    }

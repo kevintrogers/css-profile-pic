@@ -242,13 +242,35 @@ body {
   height: 30%; }
 
 .collar-left {
-  top: 75%;
-  left: -5%;
+  top: 60%;
+  left: -10%;
   -webkit-clip-path: polygon(0 0, 75% 0%, 100% 100%, 25% 100%);
   clip-path: polygon(0 0, 75% 0%, 100% 100%, 25% 100%); }
 
 .collar-right {
-  top: 80%;
-  right: -5%;
+  top: 60%;
+  right: -10%;
   -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); }
+
+.shirt-left {
+  position: absolute;
+  background: #448aff;
+  border-right: 2px solid black !important;
+  top: 90%;
+  right: -130%;
+  height: 60%;
+  width: 300%;
+  z-index: 3;
+  -webkit-clip-path: polygon(0 0, 30% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 30% 0%, 100% 100%, 0% 100%); }
+
+.shirt-right {
+  position: absolute;
+  background: #448aff;
+  top: 90%;
+  left: -130;
+  height: 60%;
+  width: 300%;
+  -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%); }
