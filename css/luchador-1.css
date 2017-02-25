@@ -14,14 +14,31 @@ body {
   left: 25%;
   width: 50%;
   height: 67%;
-  background: #bf916f;
+  background: #00c853;
   border-radius: 40%; }
 
 .glasses, .teeth, .lower-lip, .upper-lip {
   display: none; }
 
-.head-copy {
-  background: #00c853; }
+.mask-left {
+  position: absolute;
+  background: #d50000;
+  top: -4%;
+  left: 15%;
+  width: 15%;
+  height: 15%;
+  display: block;
+  border-radius: 0% 260% 130% 190%; }
+
+.mask-right {
+  position: absolute;
+  background: #d50000;
+  right: 15%;
+  width: 15%;
+  height: 15%;
+  top: -4%;
+  display: block;
+  border-radius: 260% 0% 200% 130%; }
 
 .head:hover .iris {
   animation: lookDown .3s forwards; }
@@ -70,22 +87,24 @@ body {
 
 .lens-left {
   position: absolute;
+  padding: 10%;
   top: 30%;
   left: 20%;
-  height: 100px;
-  width: 100px;
+  height: 10%;
+  width: 10%;
   background: #d50000;
   -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-  border-radius: 12%; }
+  border-radius: 12% 12% 12% 12% 12%; }
 
 .lens-right {
   position: absolute;
+  padding: 10%;
   top: 30%;
   right: 20%;
-  height: 100px;
-  width: 100px;
-  background: transparent;
+  height: 10%;
+  width: 10%;
+  background: #d50000;
   -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
   border-radius: 12%; }
