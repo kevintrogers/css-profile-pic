@@ -3,10 +3,11 @@ body {
 
 .box {
   position: relative;
-  height: 600px;
-  width: 600px;
+  height: 800px;
+  width: 800px;
   margin: auto;
-  display: block; }
+  display: block;
+  padding: 5em; }
 
 .head {
   position: absolute;
@@ -44,14 +45,11 @@ body {
   -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%); }
 
-.head:hover .iris {
-  animation: lookDown .3s forwards; }
-
 .head:hover .teeth {
-  display: none; }
-
-.head:hover .glasses, .head:hover .lower-lip, .head:hover .upper-lip {
   display: block; }
+
+.head:hover .upper-lip, .head:hover .lower-lip {
+  display: none; }
 
 .ear-left {
   position: absolute;
@@ -150,11 +148,12 @@ body {
   height: 2.5%;
   border-radius: 50% 50% 0 0;
   top: 71%;
-  left: 37.5%; }
+  left: 37.5%;
+  display: block; }
 
 .teeth {
   position: absolute;
-  display: block;
+  display: none;
   background: #fff;
   width: 25%;
   height: 5%;
@@ -169,7 +168,8 @@ body {
   height: 3.5%;
   border-radius: 0 0 50% 50%;
   top: 74%;
-  left: 37.5%; }
+  left: 37.5%;
+  display: block; }
 
 .neck {
   position: absolute;
@@ -213,22 +213,48 @@ body {
 .upper-arm-left {
   position: absolute;
   background: #bf916f;
-  height: 30%;
+  height: 20%;
   width: 50%;
   left: -40%;
   border: none;
   border-radius: 50%;
-  top: 107.5%; }
+  top: 112.5%; }
 
 .upper-arm-right {
   position: absolute;
   background: #bf916f;
-  height: 30%;
+  height: 20%;
   width: 50%;
   right: -40%;
   border: none;
   border-radius: 50%;
+  top: 112.5%; }
+
+.head:hover .upper-arm-left {
+  height: 30%;
   top: 107.5%; }
+
+.head:hover .fore-arm-left {
+  transform: rotate(0deg);
+  top: 80%; }
+
+.head:hover .hand-left {
+  transform: rotate(0deg);
+  top: 65%;
+  left: -40%; }
+
+.head:hover .upper-arm-right {
+  height: 30%;
+  top: 107.5%; }
+
+.head:hover .fore-arm-right {
+  transform: rotate(0deg);
+  top: 80%; }
+
+.head:hover .hand-right {
+  transform: rotate(0deg);
+  top: 65%;
+  right: -40%; }
 
 .fore-arm-left {
   position: absolute;
@@ -238,7 +264,8 @@ body {
   left: -45%;
   border: none;
   border-radius: 50%;
-  top: 80%; }
+  top: 100%;
+  transform: rotate(-90deg); }
 
 .fore-arm-right {
   position: absolute;
@@ -248,15 +275,17 @@ body {
   right: -45%;
   border: none;
   border-radius: 50%;
-  top: 80%; }
+  top: 100%;
+  transform: rotate(90deg); }
 
 .hand-left {
   position: absolute;
   background: #bf916f;
   width: 35%;
   height: 30%;
-  top: 65%;
-  left: -40%;
+  top: 110%;
+  left: -80%;
+  transform: rotate(-180deg);
   -webkit-clip-path: polygon(0% 30%, 100% 0, 100% 100%, 0 70%);
   clip-path: polygon(0% 30%, 100% 0, 100% 100%, 0 70%);
   border-radius: 30% 30% 30% 30%; }
@@ -266,8 +295,9 @@ body {
   background: #bf916f;
   width: 35%;
   height: 30%;
-  top: 65%;
-  right: -40%;
+  top: 110%;
+  right: -80%;
+  transform: rotate(180deg);
   -webkit-clip-path: polygon(0 0, 100 30%, 100% 70%, 0 100%);
   clip-path: polygon(0% 0%, 100% 30%, 100% 70%, 0% 100%);
   border-radius: 30% 30% 30% 30%; }
