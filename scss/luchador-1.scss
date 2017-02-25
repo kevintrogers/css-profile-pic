@@ -43,17 +43,22 @@ body {
     width: 15%;
     height: 15%;
     display:block;
-    border-radius: 0% 260% 130% 190%;
+    border-radius: 240% 130% 130%;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 .mask-right {
     position:absolute;
     background: $border-color;
-    right: 15%;
+    top:-4%;
+    right:15%;
     width: 15%;
     height: 15%;
-    top:-4%;
+    
     display:block;
-    border-radius: 260% 0% 200% 130%;
+    border-radius:  240% 130% 130%;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
  
  
