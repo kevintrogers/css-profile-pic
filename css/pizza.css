@@ -6,14 +6,27 @@
   height: 600px;
   background: #fffde7; }
 
+.box-side {
+  position: absolute;
+  display: block;
+  width: 40%;
+  height: 7%;
+  right: -3%;
+  top: 65%;
+  transform: rotate(140deg);
+  background: #6d4c41;
+  z-index: 3; }
+
 .box-bottom {
   position: absolute;
   display: block;
   width: 60%;
   height: 10%;
-  left: 20%;
+  left: 10%;
   top: 75%;
-  background: #a1887f; }
+  background: #a1887f;
+  transform: rotate(5deg);
+  z-index: 4; }
 
 .pizza-title {
   position: absolute;
@@ -22,3 +35,17 @@
   left: 30%;
   color: #1b5e20;
   font-weight: 700; }
+
+.box-top {
+  position: absolute;
+  width: 60%;
+  background: lightblue;
+  height: 50%;
+  top: 25%;
+  left: 33%;
+  -ms-transform: skew(-20deg, -10deg);
+  /* IE 9 */
+  -webkit-transform: skew(-20deg, -10deg);
+  /* Safari */
+  transform: skew(-50deg, 5deg);
+  /* Standard syntax */ }

@@ -1,5 +1,7 @@
 $background-color: #fffde7;
 $pizza-box-color: #a1887f;
+$pizza-box-highlight: #6d4c41;
+$pizza-box-inside: #a1887f;
 $pizza-logo-color: #d50000;
 $pizza-font-color: #1b5e20;
 
@@ -12,15 +14,29 @@ $pizza-font-color: #1b5e20;
     height: 600px;
     background: $background-color;
 }
-
+.box-side {
+    position: absolute;
+    display:block;
+    width: 40%;
+    height: 7%;
+    right: -3%;
+    top: 65%;
+    transform: rotate(140deg);
+    background: $pizza-box-highlight;  
+    z-index:3;
+    
+    
+}
 .box-bottom {
     position: absolute;
     display:block;
     width: 60%;
     height: 10%;
-    left: 20%;
+    left: 10%;
     top: 75%;
     background: $pizza-box-color;
+    transform: rotate(5deg);
+    z-index:4;
 }
 .pizza-title {
     position: absolute;
@@ -30,4 +46,15 @@ $pizza-font-color: #1b5e20;
    color: $pizza-font-color;
    font-weight: 700;
 
+}
+.box-top {
+    position: absolute;
+    width: 60%;
+    background: lightblue;
+    height:50%;
+    top:25%;
+    left:33%;
+       -ms-transform: skew(-20deg,-10deg); /* IE 9 */
+    -webkit-transform: skew(-20deg,-10deg); /* Safari */
+    transform: skew(-50deg, 5deg); /* Standard syntax */
 }
