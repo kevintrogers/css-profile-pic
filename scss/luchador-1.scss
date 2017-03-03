@@ -11,6 +11,8 @@ $collar-color: #0d47a1;
 $shirt-color:#448aff;
 $skin-color: #bf916f;
 $muscle-border: none;
+$six-pack-color: #267F4B;
+
 body {
     background: #fafafa;
 }
@@ -22,7 +24,6 @@ body {
     margin:auto;
     display:block;
     padding: 5em;
-        
 }
 
 .head {
@@ -209,16 +210,18 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
        border-radius: 0 0 50% 50%;
        top:95%;
        left: 37.5%;
-       z-index: 2;
+       z-index: -2;
    }
    .singlet {
        position: absolute;
        background: $mask-color;
-       height: 50%;
+       height: 80%;
        width: 100%;
        top:105%;
        right: -2.5%;
        border-radius: 40% 40% 0 0;
+        -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+        clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
    }
    
    .shoulder-left {
@@ -338,4 +341,64 @@ border-radius: 30% 30% 30% 30%;
     clip-path: polygon(0% 0%, 100% 30%, 100% 70%, 0% 100%);
     border-radius:  30% 30% 30% 30%;
 
+}
+.top-pack-left {
+    -webkit-clip-path: ellipse(49% 28% at 50% 50%);
+    clip-path: ellipse(49% 28% at 50% 50%);
+    position:absolute;
+    background: $six-pack-color;
+    top: 150%;
+    left: 27.5%;
+    width: 20%;
+    height: 10.5%;
+}
+.top-pack-right {
+    -webkit-clip-path: ellipse(49% 28% at 50% 50%);
+    clip-path: ellipse(49% 28% at 50% 50%);
+    position:absolute;
+    background: $six-pack-color;
+    top: 150%;
+    right: 27.5%;
+    width: 20%;
+    height: 10.5%;
+}
+.middle-pack-left {
+    -webkit-clip-path: ellipse(49% 28% at 50% 50%);
+    clip-path: ellipse(49% 28% at 50% 50%);
+    position:absolute;
+    background: $six-pack-color;
+    top: 160%;
+    left: 27.5%;
+    width: 20%;
+    height: 10.5%;
+}
+.middle-pack-right {
+    -webkit-clip-path: ellipse(49% 28% at 50% 50%);
+    clip-path: ellipse(49% 28% at 50% 50%);
+    position:absolute;
+    background: $six-pack-color;
+    top: 160%;
+    right: 27.5%;
+    width: 20%;
+    height: 10.5%;
+}
+.bottom-pack-left {
+    -webkit-clip-path: ellipse(49% 28% at 50% 50%);
+    clip-path: ellipse(49% 28% at 50% 50%);
+    position:absolute;
+    background: $six-pack-color;
+    top: 170%;
+    left: 27.5%;
+    width: 20%;
+    height: 10.5%;
+}
+.bottom-pack-right {
+    -webkit-clip-path: ellipse(49% 28% at 50% 50%);
+    clip-path: ellipse(49% 28% at 50% 50%);
+    position:absolute;
+    background: $six-pack-color;
+    top: 170%;
+    right: 27.5%;
+    width: 20%;
+    height: 10.5%;
 }

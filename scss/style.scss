@@ -254,9 +254,8 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
    .undershirt {
        position:absolute;
        background: $undershirt-color;
-       height: 35%;
+       height: 85%;
        width: 150%;
-       left: -25%;
        top: 90%;
        z-index:-1;
        
@@ -283,28 +282,4 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);  
   
    }
-   .shirt-left{
-       position: absolute;
-       background: $shirt-color;
-       border-right: 2px solid black !important;
-       top: 90%;
-       right: -130%;
-       height: 60%;
-       width: 300%;
-       z-index:3;
-    -webkit-clip-path: polygon(0 0, 30% 0%, 100% 100%, 0% 100%);
-    clip-path: polygon(0 0, 30% 0%, 100% 100%, 0% 100%);
-    
-       
-   }
-   .shirt-right {
-           position: absolute;
-       background: $shirt-color;
-       top: 90%;
-       left: -130;
-       height: 60%;
-       width: 300%;
-    -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100% );
-    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
-    
-   }
+

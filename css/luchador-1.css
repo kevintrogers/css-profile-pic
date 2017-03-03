@@ -179,16 +179,18 @@ body {
   border-radius: 0 0 50% 50%;
   top: 95%;
   left: 37.5%;
-  z-index: 2; }
+  z-index: -2; }
 
 .singlet {
   position: absolute;
   background: #00c853;
-  height: 50%;
+  height: 80%;
   width: 100%;
   top: 105%;
   right: -2.5%;
-  border-radius: 40% 40% 0 0; }
+  border-radius: 40% 40% 0 0;
+  -webkit-clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%); }
 
 .shoulder-left {
   position: absolute;
@@ -301,3 +303,63 @@ body {
   -webkit-clip-path: polygon(0 0, 100 30%, 100% 70%, 0 100%);
   clip-path: polygon(0% 0%, 100% 30%, 100% 70%, 0% 100%);
   border-radius: 30% 30% 30% 30%; }
+
+.top-pack-left {
+  -webkit-clip-path: ellipse(49% 28% at 50% 50%);
+  clip-path: ellipse(49% 28% at 50% 50%);
+  position: absolute;
+  background: #267F4B;
+  top: 150%;
+  left: 27.5%;
+  width: 20%;
+  height: 10.5%; }
+
+.top-pack-right {
+  -webkit-clip-path: ellipse(49% 28% at 50% 50%);
+  clip-path: ellipse(49% 28% at 50% 50%);
+  position: absolute;
+  background: #267F4B;
+  top: 150%;
+  right: 27.5%;
+  width: 20%;
+  height: 10.5%; }
+
+.middle-pack-left {
+  -webkit-clip-path: ellipse(49% 28% at 50% 50%);
+  clip-path: ellipse(49% 28% at 50% 50%);
+  position: absolute;
+  background: #267F4B;
+  top: 160%;
+  left: 27.5%;
+  width: 20%;
+  height: 10.5%; }
+
+.middle-pack-right {
+  -webkit-clip-path: ellipse(49% 28% at 50% 50%);
+  clip-path: ellipse(49% 28% at 50% 50%);
+  position: absolute;
+  background: #267F4B;
+  top: 160%;
+  right: 27.5%;
+  width: 20%;
+  height: 10.5%; }
+
+.bottom-pack-left {
+  -webkit-clip-path: ellipse(49% 28% at 50% 50%);
+  clip-path: ellipse(49% 28% at 50% 50%);
+  position: absolute;
+  background: #267F4B;
+  top: 170%;
+  left: 27.5%;
+  width: 20%;
+  height: 10.5%; }
+
+.bottom-pack-right {
+  -webkit-clip-path: ellipse(49% 28% at 50% 50%);
+  clip-path: ellipse(49% 28% at 50% 50%);
+  position: absolute;
+  background: #267F4B;
+  top: 170%;
+  right: 27.5%;
+  width: 20%;
+  height: 10.5%; }
