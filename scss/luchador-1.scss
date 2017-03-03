@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Mandali');
+
 $mask-color: #00c853;
 $border-color: #d50000;
 $retina-color: #fafafa;
@@ -325,8 +327,8 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     left: -80%;
     transform: rotate(-180deg);
     -webkit-clip-path: polygon(0% 30%, 100% 0, 100% 100%, 0 70%);
-clip-path: polygon(0% 30%, 100% 0, 100% 100%, 0 70%);
-border-radius: 30% 30% 30% 30%;
+    clip-path: polygon(0% 30%, 100% 0, 100% 100%, 0 70%);
+    border-radius: 30% 30% 30% 30%;
 
 }
 .hand-right {
@@ -401,4 +403,32 @@ border-radius: 30% 30% 30% 30%;
     right: 27.5%;
     width: 20%;
     height: 10.5%;
+}
+.belt {
+    position: absolute;
+    top: 185%;
+    left: 12.5%;
+    width: 80%;
+    height: 12%;
+    background: #30a030;
+}
+.medallion {
+    position: absolute;
+    top:-10%;
+    left:25%;
+    height:120%;
+    width: 45%;
+    border-radius: 50%;
+    border: 4px solid lightyellow;
+    background: yellow;
+    text-align:center;
+    
+}
+.medallion span {
+    position: relative;
+    margin: auto;
+    top: 25%;
+    font-weight: 700;
+    font-size: 1.2em;
+    font-family: 'Mandali', sans-serif;
 }
