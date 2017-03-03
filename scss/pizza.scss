@@ -18,12 +18,15 @@ $pizza-font-color: #1b5e20;
     position: absolute;
     display:block;
     width: 40%;
-    height: 7%;
-    right: -3%;
-    top: 65%;
+    height: 10%;
+    right: -10%;
+    top: 56%;
     transform: rotate(140deg);
     background: $pizza-box-highlight;  
     z-index:3;
+           -ms-transform: skew(-5deg, 5deg); /* IE 9 */
+    -webkit-transform: skew(-50deg, 5deg); /* Safari */
+    transform: skew(-5deg, -40deg); /* Standard syntax */
     
     
 }
@@ -47,6 +50,24 @@ $pizza-font-color: #1b5e20;
    font-weight: 700;
 
 }
+.big-action {
+    position:absolute;
+    top: 35%;
+    font-size:1.5em;
+    text-align: center;
+    margin-left:25%;
+    color: $pizza-logo-color;
+    
+}
+.small-action {
+    position:absolute;
+    top: 45%;
+    font-size:.85em;
+    text-align: center;
+    margin-left:40%;
+    color: $pizza-font-color;
+    
+}
 .box-top {
     position: absolute;
     width: 60%;
@@ -54,7 +75,7 @@ $pizza-font-color: #1b5e20;
     height:50%;
     top:25%;
     left:33%;
-       -ms-transform: skew(-20deg,-10deg); /* IE 9 */
-    -webkit-transform: skew(-20deg,-10deg); /* Safari */
+       -ms-transform: skew(-50deg, 5deg); /* IE 9 */
+    -webkit-transform: skew(-50deg, 5deg); /* Safari */
     transform: skew(-50deg, 5deg); /* Standard syntax */
 }
