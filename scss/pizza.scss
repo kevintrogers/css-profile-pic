@@ -19,13 +19,13 @@ $pizza-font-color: #1b5e20;
     display:block;
     width: 40%;
     height: 10%;
-    right: -10%;
+    right: -12%;
     top: 56%;
     transform: rotate(140deg);
     background: $pizza-box-highlight;  
     z-index:3;
-           -ms-transform: skew(-5deg, 5deg); /* IE 9 */
-    -webkit-transform: skew(-50deg, 5deg); /* Safari */
+           -ms-transform: skew(-5deg, -40deg); /* IE 9 */
+    -webkit-transform: skew(-5deg, -40deg); /* Safari */
     transform: skew(-5deg, -40deg); /* Standard syntax */
     
     
@@ -35,11 +35,20 @@ $pizza-font-color: #1b5e20;
     display:block;
     width: 60%;
     height: 10%;
-    left: 10%;
+    left: 12.5%;
     top: 75%;
     background: $pizza-box-color;
-    transform: rotate(5deg);
+    transform: rotate(4deg);
     z-index:4;
+}
+.box-top:hover {
+        -webkit-transform: rotateZ(300deg);
+    transform: rotateZ(300deg);
+    top: -97.5%;
+    left: 76.5%;
+    width: 100%;
+    height: 100%;
+
 }
 .pizza-title {
     position: absolute;
@@ -55,8 +64,11 @@ $pizza-font-color: #1b5e20;
     top: 35%;
     font-size:1.5em;
     text-align: center;
-    margin-left:25%;
+    margin-left:20%;
     color: $pizza-logo-color;
+    //   -ms-transform: skew(50deg, -5deg); /* IE 9 */
+    // -webkit-transform: skew(50deg, -5deg); /* Safari */
+    // transform: skew(50deg, -5deg); /* Standard syntax */
     
 }
 .small-action {
@@ -64,18 +76,21 @@ $pizza-font-color: #1b5e20;
     top: 45%;
     font-size:.85em;
     text-align: center;
-    margin-left:40%;
+    margin-left:37.5%;
     color: $pizza-font-color;
+    //       -ms-transform: skew(50deg, -5deg); /* IE 9 */
+    // -webkit-transform: skew(50deg, -5deg); /* Safari */
+    // transform: skew(50deg, -5deg); /* Standard syntax */
     
 }
 .box-top {
     position: absolute;
     width: 60%;
     background: lightblue;
-    height:50%;
-    top:25%;
-    left:33%;
+    height:44%;
+    top:31%;
+    left:32.5%;
        -ms-transform: skew(-50deg, 5deg); /* IE 9 */
     -webkit-transform: skew(-50deg, 5deg); /* Safari */
-    transform: skew(-50deg, 5deg); /* Standard syntax */
+    transform: skew(-50deg, 4deg); /* Standard syntax */
 }
