@@ -35,8 +35,8 @@
   z-index: 4; }
 
 .box-top:hover {
-  -webkit-transform: rotateZ(300deg);
-  transform: rotateZ(300deg);
+  -webkit-transform: rotateZ(320deg);
+  transform: rotateZ(320deg);
   top: -97.5%;
   left: 76.5%;
   width: 100%;
