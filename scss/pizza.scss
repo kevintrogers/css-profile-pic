@@ -19,8 +19,8 @@ $pizza-font-color: #1b5e20;
     } to {
    -webkit-transform: rotateX(180deg) skew(-30deg, 176deg);
     transform: rotateX(180deg) skew(-30deg, 176deg); 
-    top:-67.5%;
-    left: 30.5%;
+    top:-70%;
+    left: -10%;
     width: 100%;
     height: 100%;
 
@@ -65,7 +65,7 @@ $pizza-font-color: #1b5e20;
     z-index:4;
 }
 .open {
-    animation: open .4s;
+    animation: open .4s forwards;
 }
 .box-top:hover {
      animation: open .4s forwards;
