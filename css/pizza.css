@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Michroma|Pacifico");
 @keyframes open {
   from {
     width: 60%;
@@ -60,13 +61,13 @@
 .box-back {
   position: absolute;
   display: block;
-  width: 60%;
+  width: 60.1%;
   height: 10%;
-  left: 12.5%;
-  top: 35%;
+  left: 51.4%;
+  top: 31%;
   background: #a1887f;
-  transform: rotate(4deg);
-  z-index: -1; }
+  transform: rotate(4.1deg);
+  z-index: 1; }
 
 .box-front {
   position: absolute;
@@ -93,7 +94,7 @@
 
 .pizza-title {
   position: absolute;
-  font-family: sans-serif;
+  font-family: 'Michroma', sans-serif;
   top: 30%;
   left: 30%;
   color: #1b5e20;
@@ -115,6 +116,21 @@
   margin-left: 37.5%;
   color: #1b5e20; }
 
+.box-bottom {
+  position: absolute;
+  width: 60.5%;
+  background: lightblue;
+  height: 44%;
+  top: 31%;
+  left: 32%;
+  z-index: 0;
+  -ms-transform: skew(-50deg, 5deg);
+  /* IE 9 */
+  -webkit-transform: skew(-50deg, 5deg);
+  /* Safari */
+  transform: skew(-50deg, 4deg);
+  /* Standard syntax */ }
+
 .box-top {
   position: absolute;
   width: 60.5%;
@@ -129,3 +145,28 @@
   /* Safari */
   transform: skew(-50deg, 4deg);
   /* Standard syntax */ }
+
+.cake {
+  font-family: 'Pacifico', cursive;
+  position: absolute;
+  z-index: 2;
+  background: #ea80fc;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  top: 22%;
+  left: 22%;
+  color: #ad1457;
+  font-size: 2em; }
+
+.span-top {
+  position: absolute;
+  top: 24%;
+  left: 24%;
+  text-align: center; }
+
+.span-bottom {
+  position: absolute;
+  top: 45%;
+  left: 35%;
+  text-align: center; }

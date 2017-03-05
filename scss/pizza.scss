@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Michroma|Pacifico');
+
 $background-color: #fffde7;
 $pizza-box-color: #a1887f;
 $pizza-box-highlight: #6d4c41;
 $pizza-box-inside: #a1887f;
 $pizza-logo-color: #d50000;
 $pizza-font-color: #1b5e20;
+$cake-color: #ea80fc;
+$frosting-color: #ad1457;
+
 @keyframes open {
     from {
 
@@ -76,11 +81,10 @@ $pizza-font-color: #1b5e20;
     top: 31%;
     background: $pizza-box-color;
     transform: rotate(4.1deg);
-    z-index: 0;
-}
-    
+    z-index: 1;
 }
 .box-front {
+    
     position: absolute;
     display:block;
     width: 60%;
@@ -91,6 +95,7 @@ $pizza-font-color: #1b5e20;
     transform: rotate(4deg);
     z-index:4;
 }
+
 .open {
     animation: open .4s forwards;
 }
@@ -106,7 +111,7 @@ $pizza-font-color: #1b5e20;
 }
 .pizza-title {
     position: absolute;
-    font-family: sans-serif;
+    font-family: 'Michroma', sans-serif;
    top: 30%;
    left:30%;
    color: $pizza-font-color;
@@ -137,6 +142,18 @@ $pizza-font-color: #1b5e20;
     // transform: skew(50deg, -5deg); /* Standard syntax */
     
 }
+.box-bottom {
+    position: absolute;
+    width: 60.5%;
+    background: lightblue;
+    height:44%;
+    top:31%;
+    left:32%;
+    z-index:0;
+       -ms-transform: skew(-50deg, 5deg); /* IE 9 */
+    -webkit-transform: skew(-50deg, 5deg); /* Safari */
+    transform: skew(-50deg, 4deg); /* Standard syntax */
+}
 .box-top {
     position: absolute;
     width: 60.5%;
@@ -148,4 +165,30 @@ $pizza-font-color: #1b5e20;
        -ms-transform: skew(-50deg, 5deg); /* IE 9 */
     -webkit-transform: skew(-50deg, 5deg); /* Safari */
     transform: skew(-50deg, 4deg); /* Standard syntax */
+}
+.cake {
+    font-family: 'Pacifico', cursive;
+    position: absolute;
+    z-index:2;
+    background: $cake-color;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    top: 22%;
+    left: 22%;
+    color: $frosting-color;
+    font-size: 2em;
+}
+.span-top {
+    position: absolute;
+    top: 24%;
+    left: 24%;
+    text-align:center;
+}
+.span-bottom {
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    text-align:center;
+    
 }
