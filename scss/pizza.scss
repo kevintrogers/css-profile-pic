@@ -8,6 +8,7 @@ $pizza-logo-color: #d50000;
 $pizza-font-color: #1b5e20;
 $cake-color: #ea80fc;
 $frosting-color: #ad1457;
+$side-color: #e1bee7;
 
 @keyframes open {
     from {
@@ -178,6 +179,19 @@ $frosting-color: #ad1457;
     left: 22%;
     color: $frosting-color;
     font-size: 2em;
+}
+.cake-side {
+    position: absolute;
+    z-index: 1;
+    background: $side-color;
+    width: 81%;
+    height: 83%;
+    border-radius: 40%;
+    top: 26%;
+    left: 24%;
+    transform: skew(12deg);
+    
+    
 }
 .span-top {
     position: absolute;
