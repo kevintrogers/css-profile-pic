@@ -13,9 +13,9 @@
   to {
     -webkit-transform: rotateX(180deg) skew(-30deg, 176deg);
     transform: rotateX(180deg) skew(-30deg, 176deg);
-    top: -71.2%;
-    left: -9.2%;
-    width: 100%;
+    top: -69%;
+    left: 30.2%;
+    width: 60%;
     height: 100%; } }
 
 .box {
