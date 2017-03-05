@@ -57,6 +57,17 @@
   transform: skew(-5deg, -40deg);
   /* Standard syntax */ }
 
+.box-back {
+  position: absolute;
+  display: block;
+  width: 60%;
+  height: 10%;
+  left: 12.5%;
+  top: 35%;
+  background: #a1887f;
+  transform: rotate(4deg);
+  z-index: -1; }
+
 .box-front {
   position: absolute;
   display: block;

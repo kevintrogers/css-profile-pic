@@ -67,6 +67,19 @@ $pizza-font-color: #1b5e20;
     
     
 }
+.box-back {
+    position: absolute;
+    display: block;
+    width: 60.1%;
+    height: 10%;
+    left: 51.4%;
+    top: 31%;
+    background: $pizza-box-color;
+    transform: rotate(4.1deg);
+    z-index: 0;
+}
+    
+}
 .box-front {
     position: absolute;
     display:block;
