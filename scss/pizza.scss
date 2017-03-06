@@ -160,8 +160,8 @@ $side-color: #e1bee7;
     top:31%;
     left:32%;
     z-index:0;
-       -ms-transform: skew(-50deg, 5deg); /* IE 9 */
-    -webkit-transform: skew(-50deg, 5deg); /* Safari */
+       -ms-transform: skew(-50deg, 4deg); /* IE 9 */
+    -webkit-transform: skew(-50deg, 4deg); /* Safari */
     transform: skew(-50deg, 4deg); /* Standard syntax */
 }
 .box-top {
@@ -189,6 +189,9 @@ $side-color: #e1bee7;
     left: 22%;  
     color: $frosting-color;
     font-size: 2em;
+           -ms-transform: skew(50deg, -4deg); /* IE 9 */
+    -webkit-transform: skew(50deg, -4deg); /* Safari */
+    transform: skew(50deg, -4deg); /* Standard syntax */
 }
 .balloon-knot {
     position: absolute;
@@ -197,7 +200,7 @@ $side-color: #e1bee7;
     width: 5%;
     height: 5%;
     top: 97%;
-    left: 40%;
+    left: 50%;
     -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
