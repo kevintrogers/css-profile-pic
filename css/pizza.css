@@ -19,14 +19,6 @@
     width: 60%;
     height: 100%; } }
 
-@keyframes floatup {
-  from {
-    top: 22%;
-    left: 22%; }
-  to {
-    top: 0%;
-    left: 22%; } }
-
 .box {
   position: relative;
   margin: auto;
@@ -88,6 +80,10 @@
   transform: rotate(4deg);
   z-index: 4; }
 
+.floatup {
+  display: block;
+  z-index: 8; }
+
 .open {
   animation: open .4s forwards; }
 
@@ -99,9 +95,6 @@
 
 .box-top:hover .small-action {
   display: none; }
-
-.box-top:hover .balloon {
-  animation: floatup 5s; }
 
 .pizza-title {
   position: absolute;
@@ -149,7 +142,7 @@
   height: 44%;
   top: 31%;
   left: 32%;
-  z-index: 999;
+  z-index: 7;
   -ms-transform: skew(-50deg, 5deg);
   /* IE 9 */
   -webkit-transform: skew(-50deg, 5deg);
