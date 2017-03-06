@@ -10,6 +10,8 @@ $cake-color: #ea80fc;
 $frosting-color: #ad1457;
 $side-color: #e1bee7;
 
+
+
 @keyframes open {
     from {
 
@@ -29,6 +31,19 @@ $side-color: #e1bee7;
     left: 30.2%;
     width: 60%;
     height: 100%;
+    }
+}
+
+@keyframes floatup {
+    from {
+    top: 22%;
+    left: 22%;
+     
+        
+    } to {
+     top: 0%;
+    left: 22%;
+     
     }
 }
 
@@ -110,11 +125,14 @@ $side-color: #e1bee7;
 .box-top:hover .small-action{
     display:none;
 }
+.box-top:hover .balloon {
+    animation: floatup 5s;
+}
 .pizza-title {
     position: absolute;
     font-family: 'Michroma', sans-serif;
    top: 30%;
-   left:30%;
+   left: 22.5%;
    color: $pizza-font-color;
    font-weight: 700;
 
@@ -167,44 +185,30 @@ $side-color: #e1bee7;
     -webkit-transform: skew(-50deg, 5deg); /* Safari */
     transform: skew(-50deg, 4deg); /* Standard syntax */
 }
-.cake {
+.balloon {
+    
     font-family: 'Pacifico', cursive;
-    position: absolute;
+  position: absolute;
     z-index:3;
     background: $cake-color;
     width: 75%;
     height: 75%;
     border-radius: 50%;
     top: 22%;
-    left: 22%;
+    left: 22%;  
     color: $frosting-color;
     font-size: 2em;
 }
-.cake-side {
+.balloon-knot {
     position: absolute;
     z-index: 2;
-    background: dodgerblue;
-    width: 71%;
-    height: 42%;
-    /* border-radius: 0 0 180% 50%; */
-    top: 58.5%;
-    left: 22.5%;
-    color: #fffde7;
-    /* transform: skew(30deg); */
-}
-.cake-bottom {
-    position: absolute;
-    z-index:1;
-    background: $side-color;
-    width: 80%;
-    height: 80%;
-    border-radius: 50%;
-    border: 10px dotted $frosting-color;
-    top: 37%;
-    left: 27%;
-    font-size: 2em;
-    
-    
+    background: #ad1457;
+    width: 5%;
+    height: 5%;
+    top: 97%;
+    left: 40%;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 .span-top {
     position: absolute;
