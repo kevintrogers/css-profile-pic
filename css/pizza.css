@@ -149,7 +149,7 @@
 .cake {
   font-family: 'Pacifico', cursive;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   background: #ea80fc;
   width: 75%;
   height: 75%;
@@ -161,14 +161,27 @@
 
 .cake-side {
   position: absolute;
+  z-index: 2;
+  background: dodgerblue;
+  width: 71%;
+  height: 42%;
+  /* border-radius: 0 0 180% 50%; */
+  top: 58.5%;
+  left: 22.5%;
+  color: #fffde7;
+  /* transform: skew(30deg); */ }
+
+.cake-bottom {
+  position: absolute;
   z-index: 1;
   background: #e1bee7;
-  width: 81%;
-  height: 83%;
-  border-radius: 40%;
-  top: 26%;
-  left: 24%;
-  transform: skew(12deg); }
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  border: 10px dotted #ad1457;
+  top: 37%;
+  left: 27%;
+  font-size: 2em; }
 
 .span-top {
   position: absolute;
