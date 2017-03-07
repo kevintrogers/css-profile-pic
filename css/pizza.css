@@ -87,13 +87,7 @@
 .open {
   animation: open .4s forwards; }
 
-.box-top:hover {
-  animation: open .4s forwards; }
-
-.box-top:hover .big-action {
-  display: none; }
-
-.box-top:hover .small-action {
+.hide {
   display: none; }
 
 .pizza-title {
@@ -191,3 +185,10 @@
   top: 45%;
   left: 35%;
   text-align: center; }
+
+.box-form {
+  opacity: 0;
+  visibility: hidden; }
+
+div.box-form:target {
+  display: block; }

@@ -107,15 +107,8 @@ $side-color: #e1bee7;
 .open {
     animation: open .4s forwards;
 }
-.box-top:hover {
-     animation: open .4s forwards;
-     
 
-}
-.box-top:hover .big-action {
-    display:none;
-}
-.box-top:hover .small-action{
+.hide {
     display:none;
 }
 
@@ -216,4 +209,11 @@ $side-color: #e1bee7;
     left: 35%;
     text-align:center;
     
+}
+.box-form {
+    opacity: 0;
+    visibility: hidden;
+}
+div.box-form:target {
+  display: block;
 }
