@@ -217,9 +217,10 @@ $form-color: #e8f5e9;
 .box-form {
     display: none;
     position: relative;
-    top: 15%;
-    left: 10%;
-    width:100%;
+    top: -2.5%;
+    left: -2.5%;
+    width: 110%;
+    height: 110%;
     background: $form-color;
     padding: 15px;
     border-radius: 20px;
