@@ -90,6 +90,9 @@
 .hide {
   display: none; }
 
+.show {
+  display: block; }
+
 .pizza-title {
   position: absolute;
   font-family: 'Michroma', sans-serif;
@@ -187,8 +190,18 @@
   text-align: center; }
 
 .box-form {
-  opacity: 0;
-  visibility: hidden; }
+  display: none;
+  position: relative;
+  top: 15%;
+  left: 10%;
+  width: 100%;
+  background: #e8f5e9;
+  padding: 15px;
+  border-radius: 20px;
+  z-index: 999; }
 
-div.box-form:target {
-  display: block; }
+.input-field .prefix ~ label {
+  margin-top: -2em; }
+
+textarea.materialize-textarea {
+  margin: 20px 0 0 0 !important; }
