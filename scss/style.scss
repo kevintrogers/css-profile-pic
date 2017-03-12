@@ -182,12 +182,15 @@ top: 40%;
        border-radius: 0 0 50% 50%;
    }
    .connector {
-       position:absolute;
-       background: $glasses-color;
-       top: 33%;
-       left:41.5%;
-       height: 2%;
-       width: 15%;
+.connector {
+    position: absolute;
+    background: $glasses-color;
+    top: 33%;
+    left: 43%;
+    height: 1%;
+    width: 15%;
+  
+}
        
    }
       .connector-bottom {
