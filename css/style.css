@@ -159,21 +159,13 @@ body {
   right: 25.5%;
   border-radius: 0 0 50% 50%; }
 
-.connector .connector {
+.connector {
   position: absolute;
   background: #202020;
   top: 33%;
   left: 43%;
   height: 1%;
   width: 15%; }
-
-.connector-bottom {
-  position: absolute;
-  background: #202020;
-  top: 39%;
-  left: 48.5%;
-  height: 2%;
-  width: 4%; }
 
 .nose {
   position: absolute;
