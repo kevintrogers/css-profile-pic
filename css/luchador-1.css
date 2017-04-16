@@ -49,24 +49,108 @@
     top: 107.5%; } }
 
 @keyframes flex-right-fore {
-  0% { }
-  50% { }
-  100% { } }
+  0% {
+    position: absolute;
+    background: #bf916f;
+    height: 50%;
+    width: 25%;
+    right: -15.5%;
+    border: none;
+    border-radius: 50%;
+    top: 127.5%;
+    transform: rotate(45deg); }
+  50% {
+    position: absolute;
+    background: #bf916f;
+    height: 50%;
+    width: 25%;
+    right: -45%;
+    border: none;
+    border-radius: 50%;
+    top: 100%;
+    transform: rotate(90deg); }
+  100% {
+    transform: rotate(0deg);
+    top: 80%; } }
 
 @keyframes flex-left-fore {
-  0% { }
-  50% { }
-  100% { } }
+  0% {
+    position: absolute;
+    background: #bf916f;
+    height: 50%;
+    width: 25%;
+    left: -15.5%;
+    border: none;
+    border-radius: 50%;
+    top: 127.5%;
+    transform: rotate(-45deg); }
+  50% {
+    position: absolute;
+    background: #bf916f;
+    height: 50%;
+    width: 25%;
+    left: -45%;
+    border: none;
+    border-radius: 50%;
+    top: 100%;
+    transform: rotate(-90deg); }
+  100% {
+    transform: rotate(0deg);
+    top: 80%; } }
 
 @keyframes flex-right-hand {
-  0% { }
-  50% { }
-  100% { } }
+  0% {
+    position: absolute;
+    background: #bf916f;
+    width: 35%;
+    height: 30%;
+    top: 160%;
+    right: 7.5%;
+    transform: rotate(45deg);
+    -webkit-clip-path: polygon(0 0, 100 30%, 100% 70%, 0 100%);
+    clip-path: polygon(0% 0%, 100% 30%, 100% 70%, 0% 100%);
+    border-radius: 30% 30% 30% 30%; }
+  50% {
+    background: #bf916f;
+    width: 35%;
+    height: 30%;
+    top: 110%;
+    right: -80%;
+    transform: rotate(180deg);
+    -webkit-clip-path: polygon(0 0, 100 30%, 100% 70%, 0 100%);
+    clip-path: polygon(0% 0%, 100% 30%, 100% 70%, 0% 100%);
+    border-radius: 30% 30% 30% 30%; }
+  100% {
+    transform: rotate(0deg);
+    top: 65%;
+    right: -40%; } }
 
 @keyframes flex-left-hand {
-  0% { }
-  50% { }
-  100% { } }
+  0% {
+    position: absolute;
+    background: #bf916f;
+    width: 35%;
+    height: 30%;
+    top: 160%;
+    left: 7.5%;
+    transform: rotate(45deg);
+    -webkit-clip-path: polygon(0% 30%, 100% 0, 100% 100%, 0 70%);
+    clip-path: polygon(0% 30%, 100% 0, 100% 100%, 0 70%);
+    border-radius: 30% 30% 30% 30%; }
+  50% {
+    background: #bf916f;
+    width: 35%;
+    height: 30%;
+    top: 110%;
+    left: -80%;
+    transform: rotate(180deg);
+    -webkit-clip-path: polygon(0% 30%, 100% 0, 100% 100%, 0 70%);
+    clip-path: polygon(0% 30%, 100% 0, 100% 100%, 0 70%);
+    border-radius: 30% 30% 30% 30%; }
+  100% {
+    transform: rotate(0deg);
+    top: 65%;
+    left: -40%; } }
 
 body {
   background: #fafafa; }
