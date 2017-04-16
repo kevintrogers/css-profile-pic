@@ -70,7 +70,7 @@
     top: 100%;
     transform: rotate(90deg); }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(180deg);
     top: 80%; } }
 
 @keyframes flex-left-fore {
@@ -79,7 +79,7 @@
     background: #bf916f;
     height: 50%;
     width: 25%;
-    left: -15.5%;
+    left: 15.5%;
     border: none;
     border-radius: 50%;
     top: 127.5%;
@@ -96,7 +96,8 @@
     transform: rotate(-90deg); }
   100% {
     transform: rotate(0deg);
-    top: 80%; } }
+    top: 80%;
+    left: -46.5%; } }
 
 @keyframes flex-right-hand {
   0% {
@@ -148,7 +149,7 @@
     clip-path: polygon(0% 30%, 100% 0, 100% 100%, 0 70%);
     border-radius: 30% 30% 30% 30%; }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
     top: 65%;
     left: -40%; } }
 
@@ -393,22 +394,22 @@ body {
   top: 112.5%; }
 
 .head:hover .upper-arm-left {
-  animation: 3s flex-left-upper; }
+  animation: 3s flex-left-upper forwards; }
 
 .head:hover .fore-arm-left {
-  animation: 3s flex-left-fore; }
+  animation: 3s flex-left-fore forwards; }
 
 .head:hover .hand-left {
-  animation: 3s flex-left-hand; }
+  animation: 3s flex-left-hand forwards; }
 
 .head:hover .upper-arm-right {
-  animation: 3s flex-right-upper; }
+  animation: 3s flex-right-upper forwards; }
 
 .head:hover .fore-arm-right {
-  animation: 3s flex-right-fore; }
+  animation: 3s flex-right-fore forwards; }
 
 .head:hover .hand-right {
-  animation: 3s flex-right-hand; }
+  animation: 3s flex-right-hand forwards; }
 
 .fore-arm-left {
   position: absolute;
