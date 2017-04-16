@@ -393,30 +393,22 @@ body {
   top: 112.5%; }
 
 .head:hover .upper-arm-left {
-  height: 30%;
-  top: 107.5%; }
+  animation: 3s flex-left-upper; }
 
 .head:hover .fore-arm-left {
-  transform: rotate(0deg);
-  top: 80%; }
+  animation: 3s flex-left-fore; }
 
 .head:hover .hand-left {
-  transform: rotate(0deg);
-  top: 65%;
-  left: -40%; }
+  animation: 3s flex-left-hand; }
 
 .head:hover .upper-arm-right {
-  height: 30%;
-  top: 107.5%; }
+  animation: 3s flex-right-upper; }
 
 .head:hover .fore-arm-right {
-  transform: rotate(0deg);
-  top: 80%; }
+  animation: 3s flex-right-fore; }
 
 .head:hover .hand-right {
-  transform: rotate(0deg);
-  top: 65%;
-  right: -40%; }
+  animation: 3s flex-right-hand; }
 
 .fore-arm-left {
   position: absolute;
