@@ -17,17 +17,16 @@ $six-pack-color: #267F4B;
 
 @keyframes flex-right-upper {
     0%{
-                0%{
+
        position:absolute;
        background: $skin-color;
        height: 20%;
        width: 50%;
-       right: -32.5%;
+       right: -42.5%;
        border: $muscle-border;
        border-radius: 50%;
-       top: 122.5%;
-       transform: rotate(45deg);
-        
+       top: 112.5%;
+       transform: rotate(15deg);
     }
     50% {
        position:absolute;
@@ -38,10 +37,12 @@ $six-pack-color: #267F4B;
        border: $muscle-border;
        border-radius: 50%;
        top: 112.5%;
+       transform: rotate(-15deg);
         
     }
+   100% {
       height:30%;
-      top: 107.5%;
+      top: 117.5%;
         
     }
     
@@ -52,11 +53,11 @@ $six-pack-color: #267F4B;
        background: $skin-color;
        height: 20%;
        width: 50%;
-       left: -32.5%;
+       left: -42.5%;
        border: $muscle-border;
        border-radius: 50%;
-       top: 122.5%;
-       transform: rotate(-45deg);
+       top: 112.5%;
+       transform: rotate(-15deg);
         
     }
     50% {
@@ -74,7 +75,9 @@ $six-pack-color: #267F4B;
     100%{
       height:30%;
       top: 107.5%;
-        
+     transform: rotate(-30%);
+     width: 45%;
+    left: -32.5%;
     }
     
 }
@@ -450,21 +453,22 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
        background: $skin-color;
        height: 20%;
        width: 50%;
-       left: -32.5%;
+       left: -42.5%;
        border: $muscle-border;
        border-radius: 50%;
-       top: 122.5%;
-       transform: rotate(-45deg);
+       top: 112.5%;
+       transform: rotate(-15deg);
    }
       .upper-arm-right {
        position:absolute;
        background: $skin-color;
        height: 20%;
        width: 50%;
-       right: -40%;
+       right: -42.5%;
        border: $muscle-border;
        border-radius: 50%;
        top: 112.5%;
+       transform: rotate(15deg);
    }
   .head:hover .upper-arm-left {
       animation: 3s flex-left-upper forwards;
@@ -492,10 +496,10 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
        background: $skin-color;
        height: 50%;
        width: 25%;
-       left: -15.5%;
+       left: -35.5%;
        border: $muscle-border;
        border-radius: 50%;
-       top: 127.5%;
+       top: 117.5%;
        transform: rotate(-45deg);
    }
       .fore-arm-right {
@@ -503,20 +507,20 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
        background: $skin-color;
        height: 50%;
        width: 25%;
-       right: -45%;
+       right: -35.5%;
        border: $muscle-border;
        border-radius: 50%;
-       top: 100%;
-       transform: rotate(90deg);
+       top: 117.5%;
+       transform: rotate(45deg);
    }
 .hand-left {
     position: absolute;
     background: $skin-color;
     width: 35%;
     height: 30%;
-    top: 160%;
-    left: 7.5%;
-    transform: rotate(45deg);
+    top: 155%;
+    left: -12.5%;
+    transform: rotate(60deg);
     -webkit-clip-path: polygon(0% 30%, 100% 0, 100% 100%, 0 70%);
     clip-path: polygon(0% 30%, 100% 0, 100% 100%, 0 70%);
     border-radius: 30% 30% 30% 30%;
@@ -527,9 +531,9 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     background: $skin-color;
     width: 35%;
     height: 30%;
-    top: 110%;
-    right: -80%;
-    transform: rotate(180deg);
+    top: 155%;
+    right: -12.5%;
+    transform: rotate(-60deg);
     -webkit-clip-path: polygon(0 0, 100 30%, 100% 70%, 0 100%);
     clip-path: polygon(0% 0%, 100% 30%, 100% 70%, 0% 100%);
     border-radius:  30% 30% 30% 30%;
