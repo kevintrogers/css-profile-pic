@@ -18,8 +18,6 @@ $six-pack-color: #267F4B;
 @keyframes flex-right-upper {
     0%{
 
-       position:absolute;
-       background: $skin-color;
        height: 20%;
        width: 50%;
        right: -42.5%;
@@ -29,8 +27,7 @@ $six-pack-color: #267F4B;
        transform: rotate(15deg);
     }
     50% {
-       position:absolute;
-       background: $skin-color;
+
        height: 20%;
        width: 50%;
        right: -40%;
@@ -63,8 +60,7 @@ $six-pack-color: #267F4B;
         
     }
     50% {
-      position:absolute;
-       background: $skin-color;
+
        height: 20%;
        width: 50%;
        left: -40%;
@@ -83,21 +79,18 @@ $six-pack-color: #267F4B;
     
 }
 @keyframes flex-right-fore {
-        0%{
-       position:absolute;
-       background: $skin-color;
+
        height: 50%;
        width: 25%;
-       right: -15.5%;
+       right: -35.5%;
        border: $muscle-border;
        border-radius: 50%;
-       top: 127.5%;
+       top: 117.5%;
        transform: rotate(45deg);
         
     }
     50% {
-       position:absolute;
-       background: $skin-color;
+
        height: 50%;
        width: 25%;
        right: -45%;
@@ -116,14 +109,12 @@ $six-pack-color: #267F4B;
 }
 @keyframes flex-left-fore {
         0%{
-       position:absolute;
-       background: $skin-color;
        height: 50%;
        width: 25%;
-       left: 15.5%;
+       left: -35.5%;
        border: $muscle-border;
        border-radius: 50%;
-       top: 127.5%;
+       top: 117.5%;
        transform: rotate(-45deg);
         
     }
@@ -146,8 +137,7 @@ $six-pack-color: #267F4B;
 }
 @keyframes flex-right-hand {
         0%{
-    position: absolute;
-    background: $skin-color;
+
     width: 35%;
     height: 30%;
     top: 160%;
@@ -158,7 +148,7 @@ $six-pack-color: #267F4B;
     border-radius: 30% 30% 30% 30%;
     }
     50% {
-    background: $skin-color;
+
     width: 35%;
     height: 30%;
     top: 110%;
@@ -178,8 +168,7 @@ $six-pack-color: #267F4B;
 }
 @keyframes flex-left-hand {
         0%{
-    position: absolute;
-    background: $skin-color;
+
     width: 35%;
     height: 30%;
     top: 160%;
@@ -190,7 +179,7 @@ $six-pack-color: #267F4B;
     border-radius: 30% 30% 30% 30%;
     }
     50% {
-    background: $skin-color;
+
     width: 35%;
     height: 30%;
     top: 110%;
