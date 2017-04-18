@@ -14,6 +14,48 @@ $shirt-color:#448aff;
 $skin-color: #bf916f;
 $muscle-border: none;
 $six-pack-color: #267F4B;
+$animation-time: .4s;
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+  } 
+  to
+  {
+    opacity:0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    visibility: hidden;
+  }  
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    visibility: hidden;
+  } 
+  to
+  {
+    opacity:1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+  }  
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    visibility: hidden;
+  } 
+  to
+  {
+    opacity:1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+  }  
+}
 
 @keyframes flex-right-upper {
     0%{
@@ -202,10 +244,21 @@ $six-pack-color: #267F4B;
 body {
     background: #fafafa;
 }
-.message {
+
+.btn { 
+    padding:1em;
+    border-radius: 50%;
+    font-size: 1.4em;
+    margin: 2em;
     text-align: center;
-    font-family: "Slackey", sans-serif;
-    color: orange;
+    border: none;
+}
+#deny-btn{
+    margin-left: 20em;
+    background: red;
+}
+#confirmation-btn {
+    background: limegreen;
 }
 
 .box {
@@ -349,18 +402,7 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
    
    .nose {
        position: absolute;
-       top:42.5%;
-       left: 43.75%;
-       border-radius: 30%;
-       height: 20%;
-       width: 12.5%;
-       background: $nose-color;
-       -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    background: $nose-color;
-
-   }
-   .upper-lip {
+       
        position: absolute;
        background: $lip-color;
        width: 25%;
@@ -458,25 +500,56 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
        transform: rotate(15deg);
    }
   .head:hover .upper-arm-left {
-      animation: 3s flex-left-upper forwards;
+      animation: $animation-time flex-left-upper forwards;
   }
  .head:hover .fore-arm-left{
-      animation: 3s flex-left-fore forwards;
+      animation: $animation-time flex-left-fore forwards;
   }
   .head:hover .hand-left {
-      animation: 3s flex-left-hand forwards;
-      
+      animation: $animation-time flex-left-hand forwards;
   }
     .head:hover .upper-arm-right {
-      animation: 3s flex-right-upper forwards;
+      animation: $animation-time flex-right-upper forwards;
   }
  .head:hover .fore-arm-right{
-      animation: 3s flex-right-fore forwards;
+      animation: $animation-time flex-right-fore forwards;
       
   }
   .head:hover .hand-right {
-      animation: 3s flex-right-hand forwards;
+      animation: $animation-time flex-right-hand forwards;
       
+  }
+  .fadeOut {
+     animation: $animation-time fadeOut forwards;
+  }
+   .fadeIn {
+      animation: $animation-time fadeIn forwards;
+  }
+  .pose-message, .welcome-message {
+      position:absolute;
+      top: 2.5%;
+      font-family: 'Slackey', sans-serif;
+      
+  }
+  .welcome-message {
+      opacity:1;
+      visibility: visible;
+      left: 18%;
+      right: 18%;
+      color: orange;
+      font-size:2.4em;
+      
+  }
+    .pose-message {
+      opacity:0;
+      visibility: hidden;
+      left: 0;
+      right: 0;
+      z-index:3;
+      
+      color: red;
+      font-size: 3.5em;
+ 
   }
    .fore-arm-left {
        position:absolute;
