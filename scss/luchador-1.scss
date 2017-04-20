@@ -16,46 +16,6 @@ $muscle-border: none;
 $six-pack-color: #267F4B;
 $animation-time: .4s;
 
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    visibility: visible;
-  } 
-  to
-  {
-    opacity:0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    visibility: hidden;
-  }  
-}
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    visibility: hidden;
-  } 
-  to
-  {
-    opacity:1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    visibility: visible;
-  }  
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    visibility: hidden;
-  } 
-  to
-  {
-    opacity:1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    visibility: visible;
-  }  
-}
 
 @keyframes flex-right-upper {
     0%{
@@ -519,37 +479,34 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
       animation: $animation-time flex-right-hand forwards;
       
   }
-  .fadeOut {
-     animation: $animation-time fadeOut forwards;
-  }
-   .fadeIn {
-      animation: $animation-time fadeIn forwards;
-  }
-  .pose-message, .welcome-message {
+
+  .yes-message, .no-message, .welcome-message {
       position:absolute;
       top: 2.5%;
       font-family: 'Slackey', sans-serif;
       
   }
   .welcome-message {
-      opacity:1;
-      visibility: visible;
+
       left: 18%;
       right: 18%;
       color: orange;
       font-size:2.4em;
       
   }
-    .pose-message {
-      opacity:0;
-      visibility: hidden;
+    .yes-message {
       left: 0;
       right: 0;
       z-index:3;
-      
       color: red;
       font-size: 3.5em;
  
+  }
+  .no-message {
+      color: lightblue;
+      font-size:2.4em;
+      left: 20%;
+      right: 20%;
   }
    .fore-arm-left {
        position:absolute;
