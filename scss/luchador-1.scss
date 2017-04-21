@@ -501,13 +501,13 @@ clip-path: circle(50% at 50% 50%);
       
   }
 
-  .yes-message, .no-message, .welcome-message {
+  .yes-message, .no-message, .initial-message {
       position:absolute;
       top: 2.5%;
       font-family: 'Slackey', sans-serif;
       
   }
-  .welcome-message {
+  .initial-message {
 
       left: 18%;
       right: 18%;

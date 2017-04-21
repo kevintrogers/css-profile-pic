@@ -409,12 +409,12 @@ body {
 .head:hover .hand-right {
   animation: 0.4s flex-right-hand forwards; }
 
-.yes-message, .no-message, .welcome-message {
+.yes-message, .no-message, .initial-message {
   position: absolute;
   top: 2.5%;
   font-family: 'Slackey', sans-serif; }
 
-.welcome-message {
+.initial-message {
   left: 18%;
   right: 18%;
   color: orange;
