@@ -16,6 +16,16 @@ $muscle-border: none;
 $six-pack-color: #267F4B;
 $animation-time: .4s;
 
+@keyframes roll-tear {
+    from {
+        position: absolute;
+        top: 45%;
+       left: 33%;
+    }to{
+      top: 75%;
+       left: 33%; 
+    }
+}
 
 @keyframes flex-right-upper {
     0%{
@@ -664,4 +674,8 @@ clip-path: circle(50% at 50% 50%);
     font-weight: 700;
     font-size: 1.2em;
     font-family: 'Mandali', sans-serif;
+}
+/* animations*/
+.roll-tear {
+    animation:  $animation-time roll-tear forwards;
 }
