@@ -1,23 +1,34 @@
 $(function(){
-        $('.single-tear').hide();
-        $('.no-message').hide();
-        $('.yes-message').hide();
-        $('.initial-message').show();
+    
+    var singleTear = $('.single-tear'),
+    noMessage = $('.no-message'),
+    yesMessage = $('.yes-message'),
+    initialMessage = $('.initial-message');    
+        
+        singleTear.hide();
+        noMessage.hide();
+        yesMessage.hide();
+        initialMessage.show();
         
         
     $('#confirmation-btn').click(function() {
-        $('.single-tear').hide();
-        $('.no-message').hide();
-        $('.initial-message').hide();
-        $('.yes-message').show();
+        singleTear.hide();
+        noMessage.hide();
+        initialMessage.hide();
+        yesMessage.show();
     });
     
      $('#deny-btn').click(function() {
-        $('.initial-message').hide();
-        $('.yes-message').hide();
-        $('.no-message').show();
-        $('.single-tear').show();
-        $('.single-tear').addClass('roll-tear');
+        initialMessage.hide();
+        yesMessage.hide();
+        noMessage.show();
+        singleTear.show();
+        singleTear.addClass('roll-tear');
+        // singleTear.one('webkitAnimationEnd oanimationend msAnimationEnd animationend'),
+        // function (e) {
+        //     singleTear.removeClass('roll-tear');
+        
+
     });
     
 });

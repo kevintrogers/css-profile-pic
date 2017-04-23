@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Slackey|Mandali");
 @keyframes roll-tear {
   from {
-    position: absolute;
     top: 45%;
     left: 33%; }
   to {
@@ -243,6 +242,14 @@ body {
 .eye-right {
   top: 40%;
   right: 33%; }
+
+.single-tear {
+  display: block;
+  top: 45%;
+  left: 33%;
+  height: 6%;
+  width: 3%;
+  background: transparent; }
 
 .single-tear-base {
   position: absolute;
@@ -577,4 +584,4 @@ body {
 
 /* animations*/
 .roll-tear {
-  animation: 0.4s roll-tear forwards; }
+  animation: 0.4s roll-tear infinite; }
