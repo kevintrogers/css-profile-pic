@@ -1,11 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Slackey|Mandali");
-@keyframes roll-tear {
-  from {
-    top: 45%;
-    left: 33%; }
-  to {
-    top: 75%;
-    left: 33%; } }
+@keyframes roll-base {
+  0% {
+    top: 45%; }
+  100% {
+    top: 99%; } }
+
+@keyframes roll-drop {
+  0% {
+    top: 47%;
+    left: 33.1%; }
+  100% {
+    top: 101%;
+    left: 33.1%; } }
 
 @keyframes flex-right-upper {
   0% {
@@ -242,14 +248,6 @@ body {
 .eye-right {
   top: 40%;
   right: 33%; }
-
-.single-tear {
-  display: block;
-  top: 45%;
-  left: 33%;
-  height: 6%;
-  width: 3%;
-  background: transparent; }
 
 .single-tear-base {
   position: absolute;
@@ -583,5 +581,8 @@ body {
   font-family: 'Mandali', sans-serif; }
 
 /* animations*/
-.roll-tear {
-  animation: 0.4s roll-tear infinite; }
+.roll-base {
+  animation: 7s roll-base infinite; }
+
+.roll-drop {
+  animation: 7s roll-drop infinite; }

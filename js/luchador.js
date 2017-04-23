@@ -1,11 +1,13 @@
 $(function(){
     
-    var singleTear = $('.single-tear'),
+    var singleTear = $('.single-tear-base'),
+    singleDrop= $('.single-tear-drop'),
     noMessage = $('.no-message'),
     yesMessage = $('.yes-message'),
     initialMessage = $('.initial-message');    
         
         singleTear.hide();
+        singleDrop.hide();
         noMessage.hide();
         yesMessage.hide();
         initialMessage.show();
@@ -13,6 +15,7 @@ $(function(){
         
     $('#confirmation-btn').click(function() {
         singleTear.hide();
+        singleDrop.hide();
         noMessage.hide();
         initialMessage.hide();
         yesMessage.show();
@@ -23,11 +26,10 @@ $(function(){
         yesMessage.hide();
         noMessage.show();
         singleTear.show();
-        singleTear.addClass('roll-tear');
-        // singleTear.one('webkitAnimationEnd oanimationend msAnimationEnd animationend'),
-        // function (e) {
-        //     singleTear.removeClass('roll-tear');
-        
+
+        singleTear.addClass('roll-base');
+        singleDrop.show();
+        singleDrop.addClass('roll-drop');
 
     });
     

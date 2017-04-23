@@ -15,15 +15,29 @@ $skin-color: #bf916f;
 $muscle-border: none;
 $six-pack-color: #267F4B;
 $animation-time: .4s;
+$tear-time: 7s;
 
-@keyframes roll-tear {
-    from {
+@keyframes roll-base {
+    0% {
         
         top: 45%;
-       left: 33%;
-    }to{
-      top: 75%;
-       left: 33%; 
+
+    }
+    100%{
+      top: 99%;
+ 
+    }
+}
+
+@keyframes roll-drop {
+    0% {
+    top: 47%;
+    left:33.1%;
+    }
+    100%{
+      top: 101%;
+      left:33.1%;
+ 
     }
 }
 
@@ -320,15 +334,7 @@ clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
      right: 33%;
      
    }
-   .single-tear{
 
-       display:block;
-        top: 45%;
-       left: 33%;
-       height: 6%;
-       width: 3%;
-       background:transparent;
-   }
    .single-tear-base {
        position: absolute;
        width:2%;
@@ -680,6 +686,10 @@ clip-path: circle(50% at 50% 50%);
     font-family: 'Mandali', sans-serif;
 }
 /* animations*/
-.roll-tear {
-    animation:  $animation-time roll-tear infinite;
+.roll-base {
+    animation:  $tear-time roll-base infinite;
+}
+.roll-drop {
+    animation:  $tear-time roll-drop infinite;
+    
 }
