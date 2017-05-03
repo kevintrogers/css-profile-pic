@@ -500,23 +500,23 @@ clip-path: circle(50% at 50% 50%);
        top: 112.5%;
        transform: rotate(15deg);
    }
-  .head:hover .upper-arm-left {
+  .upper-arm-left-flex {
       animation: $animation-time flex-left-upper forwards;
   }
- .head:hover .fore-arm-left{
+ .fore-arm-left-flex{
       animation: $animation-time flex-left-fore forwards;
   }
-  .head:hover .hand-left {
+  .hand-left-flex {
       animation: $animation-time flex-left-hand forwards;
   }
-    .head:hover .upper-arm-right {
+.upper-arm-right-flex {
       animation: $animation-time flex-right-upper forwards;
   }
- .head:hover .fore-arm-right{
+.fore-arm-right-flex{
       animation: $animation-time flex-right-fore forwards;
       
   }
-  .head:hover .hand-right {
+.hand-right-flex{
       animation: $animation-time flex-right-hand forwards;
       
   }

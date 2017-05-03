@@ -405,22 +405,22 @@ body {
   top: 112.5%;
   transform: rotate(15deg); }
 
-.head:hover .upper-arm-left {
+.upper-arm-left-flex {
   animation: 0.4s flex-left-upper forwards; }
 
-.head:hover .fore-arm-left {
+.fore-arm-left-flex {
   animation: 0.4s flex-left-fore forwards; }
 
-.head:hover .hand-left {
+.hand-left-flex {
   animation: 0.4s flex-left-hand forwards; }
 
-.head:hover .upper-arm-right {
+.upper-arm-right-flex {
   animation: 0.4s flex-right-upper forwards; }
 
-.head:hover .fore-arm-right {
+.fore-arm-right-flex {
   animation: 0.4s flex-right-fore forwards; }
 
-.head:hover .hand-right {
+.hand-right-flex {
   animation: 0.4s flex-right-hand forwards; }
 
 .yes-message, .no-message, .initial-message {
