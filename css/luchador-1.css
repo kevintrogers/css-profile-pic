@@ -182,9 +182,6 @@ body {
   background: #00c853;
   border-radius: 40%; }
 
-.glasses, .teeth, .lower-lip, .upper-lip {
-  display: none; }
-
 .mask-left {
   position: absolute;
   background: #d50000;

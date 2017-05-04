@@ -10,7 +10,14 @@ $(function(){
     leftFore = $('.fore-arm-left'),
     rightFore = $('.fore-arm-right'),
     leftUpper = $('.upper-arm-left'),
-    rightUpper = $('.upper-arm-right');    
+    rightUpper = $('.upper-arm-right'),
+    teeth = $('.teeth'),
+    upperLip = $('.upper-lip'),
+    lowerLip = $('.lower-lip');
+    
+    
+
+        teeth.hide();
         
         singleTear.hide();
         singleDrop.hide();
@@ -26,6 +33,10 @@ $(function(){
         initialMessage.hide();
         yesMessage.show();
         
+        lowerLip.hide();
+        upperLip.hide();
+        teeth.show();
+        
         leftHand.toggleClass('hand-left-flex');
         rightHand.toggleClass('hand-right-flex');
         leftFore.toggleClass('fore-arm-left-flex');
@@ -39,6 +50,10 @@ $(function(){
         yesMessage.hide();
         noMessage.show();
         singleTear.show();
+        
+        lowerLip.show();
+        upperLip.show();
+        teeth.hide();
 
         singleTear.addClass('roll-base');
         singleDrop.show();
